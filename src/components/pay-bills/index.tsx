@@ -8,7 +8,7 @@ export default function PayBills() {
   const scrollRef = useRef(null);
   return (
     <section
-      className="p-10 md:p-20 bg-center bg-cover relative min-h-screen w-full flex flex-col justify-center"
+      className="p-10 lg:p-20 bg-center bg-cover relative min-h-screen w-full flex flex-col justify-center"
       style={{ backgroundImage: 'url(/images/paybills.jpg)' }}
     >
       <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full bg-black/20" />
@@ -18,7 +18,7 @@ export default function PayBills() {
           whileInView={{ y: 0 }}
           viewport={{ root: scrollRef }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="flex justify-between relative z-[2]"
+          className="flex flex-col lg:flex-row gap-8 lg:gap-0  justify-between relative z-[2]"
         >
           <div className="max-w-[333px]">
             <div className="flex flex-col gap-20">
@@ -46,7 +46,7 @@ export default function PayBills() {
               alt="Calendar Image"
               width={340}
               height={368}
-              className="object-cover with-full backdrop-blur-40"
+              className="object-contain rounded-[20px]  backdrop-blur-40"
             />
           </div>
         </motion.div>

@@ -36,10 +36,10 @@ export default function ContactForm() {
         viewport={{ once: true }}
         className="max-w-[1280px] mx-auto"
       >
-        <div className="flex flex-col md:flex-row md:gap-[250px]">
+        <div className="flex flex-col md:flex-row gap-20 lg:gap-[250px]">
           {/* content */}
           <div className="flex flex-col items-start  justify-between">
-            <h2 className="text-3xl md:text-5xl mb-6 text-white lg:text-[52px] lg:leading-15 font-paytone-one text-center">
+            <h2 className="text-3xl lg:text-5xl mb-6 text-white xl:text-[52px] lg:leading-15 font-paytone-one text-center">
               Get in touch
             </h2>
             <div>
