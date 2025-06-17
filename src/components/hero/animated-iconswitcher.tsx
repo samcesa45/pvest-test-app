@@ -13,7 +13,7 @@ type IconProps = {
 };
 export default function AnimatedIconSwitcher({ icons }: IconProps) {
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
+  const [, setDirection] = useState(1);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -22,7 +22,7 @@ export default function AnimatedIconSwitcher({ icons }: IconProps) {
     }, 3000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [icons.length]);
 
   return (
     <div

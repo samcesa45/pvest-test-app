@@ -34,10 +34,10 @@ export default function ShopOnline() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="font-dm-sans font-medium text-[1rem] leading-5 text-black"
             >
-              Experience the world at your fingertips with our seamless online
+              {`Experience the world at your fingertips with our seamless online
               shopping platform. From the latest fashion trends to must-have
               gadgets, shop the world's best brands and products from the
-              comfort of your own home.
+              comfort of your own home.`}
             </motion.p>
             <div>
               <motion.p

@@ -1,6 +1,5 @@
 'use client';
-import { inView } from 'motion';
-import { useAnimation, useInView, motion } from 'motion/react';
+import { useAnimation, useInView, motion, inView } from 'motion/react';
 import React, { useEffect, useRef } from 'react';
 
 export default function AnimatedSection({
@@ -16,7 +15,7 @@ export default function AnimatedSection({
     if (animateInView) {
       controls.start('visible');
     }
-  }, [inView]);
+  }, [inView,controls,animateInView]);
   return (
     <motion.div
       ref={ref}

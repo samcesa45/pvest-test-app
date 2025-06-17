@@ -1,14 +1,14 @@
 'use client';
-import React, { useRef } from 'react';
+import React from 'react';
 import { navLinks, socialLinks } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion, useScroll } from 'motion/react';
+import { motion } from 'motion/react';
 import FaqSection from '../faqs';
 import ContactForm from '../form/contact-form';
 
 export default function Footer() {
-  const scrollRef = useRef(null);
+
   return (
     <>
       <footer className="row-start-3 relative flex gap-[24px]  justify-center bg-footer-purple min-h-screen w-full p-[40px] md:p-[80px]">
