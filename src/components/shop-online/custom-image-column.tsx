@@ -1,5 +1,5 @@
 'use client';
-import { imgColumn1,imgColumn2,imgColumn3 } from '@/constants';
+import { imgColumn1, imgColumn2, imgColumn3 } from '@/constants';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 

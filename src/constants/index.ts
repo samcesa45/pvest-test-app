@@ -121,4 +121,3 @@ export const imgColumn3 = [
   '/images/image-8.jpg',
   '/images/image-9.jpg',
 ];
-
