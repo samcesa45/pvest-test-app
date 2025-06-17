@@ -12,9 +12,6 @@ A pixel-perfect, responsive, and animated landing page built with **Next.js**, *
 - ⬆️⬇️ **Scroll up/down navigation** with buttons
 - 🌐 **Cross-browser compatibility**
 
-## 📸 Preview
-
-![Landing Page Screenshot](./public/preview.png)
 
 ## 🛠️ Technologies Used
 
