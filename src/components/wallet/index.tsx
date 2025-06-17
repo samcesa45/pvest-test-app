@@ -13,11 +13,11 @@ export const cardImg = [
 export default function MultiCurrencyWalletSection() {
   return (
     <section
-      className="w-full px-10 pt-10 flex flex-col pb-0  xl:px-20 xl:pt-20 bg-white"
+      className="w-full px-10 pt-10 flex flex-col pb-0 xl:px-20 xl:pt-20 bg-white"
       id="wallet-section"
     >
-      <div className="flex items-center">
-        <div className="flex flex-col mr-[22px] justify-between max-w-[400px] gap-[70px] mb-10">
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col mr-[22px] pb-[240px] lg:pb-10 justify-between max-w-[400px] gap-[70px] ">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export default function MultiCurrencyWalletSection() {
             width={358}
             height={619}
             className="object-cover"
-            alt='iphone'
+            alt="iphone"
           />
           <div className="absolute -top-[200px] lg:-top-[40%] items-center left-0 right-0 flex flex-col justify-center gap-4 z-10">
             {cardImg.map((src, index) => (

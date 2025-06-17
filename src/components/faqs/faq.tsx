@@ -80,8 +80,10 @@ export default function Faq() {
                 key={index}
                 className="overflow-hidden rounded-md cursor-pointer border-b-2 pb-8 border-[#5D0186] last:border-b-0"
               >
-                <div
-                  className="cursor-pointer flex justify-between items-start  gap-x-10 max-w-[780px]"
+                <motion.div
+                  whileHover={{ color: 'white' }}
+                  transition={{ duration: 0.3, delay: 0.3 }}
+                  className="cursor-pointer flex justify-between hover:text-white items-start  gap-x-10 max-w-[780px]"
                   onClick={() => handleToggle(index)}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
@@ -90,21 +92,26 @@ export default function Faq() {
                     }
                   }}
                 >
-                  <p className="text-extralight-purple text-start font-paytone-one font-[400] text-xl lg:text-[40px] lg:leading-15">
+                  <motion.p
+                    whileHover={{ color: 'white' }}
+                    transition={{ duration: 0.8, delay: 0.8 }}
+                    className="text-extralight-purple  text-start font-paytone-one font-[400] text-xl lg:text-[40px] lg:leading-15"
+                  >
                     {faq.question}
-                  </p>
+                  </motion.p>
                   <motion.button
                     id={buttonId}
                     aria-expanded={isOpen}
                     aria-controls={contentId}
-                    animate={{ rotate: isOpen ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
+                    whileHover={{ color: 'white' }}
+                    animate={{ rotate: isOpen ? 45 : 0 }}
+                    transition={{ duration: 0.8, delay: 0.8 }}
                     className="cursor-pointer"
                     onClick={() => handleToggle(index)}
                   >
-                    <PlusIcon className="text-extralight-purple" />
+                    <PlusIcon className="text-extralight-purple active:text-white hover:text-white" />
                   </motion.button>
-                </div>
+                </motion.div>
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
@@ -113,9 +120,9 @@ export default function Faq() {
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ delay: 0.5 }}
-                      className="pb-4 text-sm"
+                      className=" text-sm p-8 bg-[#43015fd9]"
                     >
-                      <p className="font-paytone-one text-extralight-purple text-lg">
+                      <p className="font-dm-sans font-medium text-[1rem] leading-5 text-white">
                         {faq.answer}
                       </p>
                     </motion.div>
